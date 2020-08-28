@@ -26,8 +26,9 @@ void Read_Input(uint8_t *input_data_array){
                     NCars_oX++;
                     Cars_Count_LED(SIDE_OX, NCars_oX);
                 }
-            } else {
                 flag_ox = 1U;
+            } else {
+                flag_ox = 0;
             }
         }
 
@@ -39,9 +40,10 @@ void Read_Input(uint8_t *input_data_array){
                 if(NCars_oY < MAX_CARS){
                     NCars_oY++;
                     Cars_Count_LED(SIDE_OY, NCars_oY);
+                    flag_oy = 1U;
                 }
             } else {
-                flag_oy = 1U;
+                flag_oy = 0;
             }
         }
     }
