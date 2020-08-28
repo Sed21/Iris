@@ -50,7 +50,7 @@ void main_app(void){
         run_once = 1;
         Exec_Task(TL_OY);
     } else {
-        NCycles = cars[0] + cars[1] + 1; // last car
+        NCycles = cars[0] + cars[1]; // last car
         run_once = 0;
 
         //NCycles decrements in bsp.c
